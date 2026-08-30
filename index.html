@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đăng nhập - Course Registration</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="login-container">
+  <div class="login-box">
+    <div class="logo">
+      <div class="logo-icon">🎓</div>
+      <h1>Log In</h1>
+      <p>Hệ thống đăng nhập thông tin</p>
+    </div>
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="username">Tên đăng nhập</label>
+        <div class="input-box">
+          <span class="input-icon">👤</span>
+          <input type="text" id="username" placeholder="Nhập tên đăng nhập" autocomplete="username" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password">Mật khẩu</label>
+        <div class="input-box">
+          <span class="input-icon">🔒</span>
+          <input type="password" id="password" placeholder="Nhập mật khẩu" autocomplete="current-password" required>
+          <button type="button" id="togglePassword" class="password-toggle">👁</button>
+        </div>
+      </div>
+      <div id="message" class="message"></div>
+      <button type="submit" id="loginButton" class="login-button">
+        <span id="buttonText">Đăng nhập</span>
+        <span id="loading" class="loading hidden"></span>
+      </button>
+    </form>
+    <div class="login-footer"><p>© 2026 Course Registration</p></div>
+  </div>
+</div>
+<script src="js/login.js"></script>
+</body>
+</html>
